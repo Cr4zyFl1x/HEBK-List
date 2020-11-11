@@ -1,12 +1,10 @@
 package eu.flrkv.dynList;
 
-import java.util.Stack;
-
-public class List{
+public class LinkedList {
     private Knoten first;
     private Knoten akt;
 
-    public List(){
+    public LinkedList(){
 
     }
 
@@ -112,7 +110,7 @@ public class List{
     }
 
     //Die Liste pList wird an die Liste angehängt. Das aktuelle Objekt bleibt unverändert. Falls pList null oder eine leere Liste ist, bleibt die Liste unverändert.
-    public void concat(List pList){
+    public void concat(LinkedList pList){
         if (pList == null || pList.first == null) {
             return;
         }
